@@ -1,16 +1,42 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, 
+    // HeaderComponent, CommonModule
+  ],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+   <!-- <div class="flexDiv" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}"> -->
+  <!-- <app-header/> -->
+  <!-- <div class = "content"> -->
+  <router-outlet></router-outlet>
+<!-- </div> -->
+<!-- </div> -->
 
-    <router-outlet />
   `,
-  styles: [],
+  styles: [``],
 })
 export class AppComponent {
-  title = 'Energy';
-}
+  // backgroundImage = '/Energy%20Turbine.jpeg';
+
+  // private backgrounds: { [key: string]: string} = {
+  //   '/': '/Energy%20Turbine.jpeg'
+  // };
+
+  // constructor(private router: Router){}
+  //   ngOnInit(): void {
+  //     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+  //     //Add 'implements OnInit' to the class.
+  //     this.router.events.subscribe((event) => {
+  //        if(event instanceof NavigationEnd){
+  //         this.backgroundImage = this.backgrounds[event.url] || '/Energy%20Turbine.jpeg'
+  //        }
+  //     })
+  //   }
+  }
+
+
