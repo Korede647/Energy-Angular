@@ -36,40 +36,40 @@
     border-radius: 50px;
   }
 .list {
-    color: white;
+    /* color: white; */
     padding-right: 17px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 17px;
     border-radius: 20px;
-    font-size: 14px
+    font-size: 16px
   }
 .list:hover{
     cursor: pointer;
-    background-color: rgba(245, 245, 245, 0.287);
-    color: rgba(0, 0, 0, 0.575);
+    color: rgb(1, 94, 1);
     transition: all ease-in 0.3s;
   }
 
 .active{
-    background-color: white;
-    color: rgb(51, 51, 51)
+    color: rgb(58, 58, 58)
 }
 
 .explore{
-    width: 160px;
-    height: 45px;
-    border: solid rgba(231, 231, 231, 0.952) 2px;
+    width: 165px;
+    height: 47px;
+    /* border: solid rgba(231, 231, 231, 0.952) 2px; */
+    border: solid black 2px;
     /* font-weight: bold; */
-    color: rgba(231, 231, 231, 0.952);
+    /* color: rgba(231, 231, 231, 0.952); */
+    color: black;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: 15px;
     /* font-family: "Open Sans", sans-serif; */
 }
 
 .explore:hover{
    cursor: pointer;
-   background-color: rgba(231, 231, 231, 0.952);
-   color: black;
+   background-color: black;
+   color: white;
    transition: all ease-in-out 0.3s;
 }
