@@ -1,0 +1,117 @@
+/* wrapper & nav */
+.slideButton {
+    width: 260px;
+    height: 60px;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .slider {
+    position: relative;
+    overflow: hidden;
+    width: 85%;
+    max-width: 1200px;
+    height: 340px;
+    padding: 10px;
+    margin: auto;
+    /* background-color: red; */
+  }
+  
+  .nav {
+    border: none;
+    border-radius: 50%;
+    font-size: 3rem;
+    width: 3.7rem;
+    height: 3.7rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255,255,255,0.9); */
+  }
+  .nav:hover{
+    font-size: 3.6rem;
+    color: #333;
+  }
+  
+  /* slides container: show 2.5 slides at once, slide by one full slide width */
+  .slides {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.5s ease;
+    transform: translateX(calc((40% + 1rem) * var(--current, 0) * -1));
+  }
+  
+  /* each slide: 2.5 slides => 40% + 40% + 20% of the container */
+  .slideGradient {
+    height: 300px;
+    flex: 0 0 calc((100% - 2rem) / 2.5); /* 2 gaps of 1rem for 2.5 slides */
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  /* inner slide content */
+  .slide {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* header */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  .meta h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .meta small {
+    color: #666;
+  }
+  
+  /* rating */
+  .rating {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  .rating span {
+    font-size: 1rem;
+    color: #ccc;
+    margin-right: 2px;
+  }
+  .rating span.filled {
+    color: #f5b50a;
+  }
+  .rating small {
+    margin-left: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+  /* body text */
+  .body {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+  }
+  

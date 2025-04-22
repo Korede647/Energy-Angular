@@ -5,11 +5,11 @@
     <div class="overlay">
       <app-header/>
       <div class = "content">
-          <h2>Electrify tomorrow with renewable brilliance.</h2>
-          <h4>The Future deserves a clean, cost-savvy kickstart!</h4>
+          <h2>Optimize Energy Usage with Predictive Insights
+          </h2>
+          <h4>Your Industrial Energy Command Center</h4>
           <p>
-              Fueled by historical insights, our energy predictions are 97% on the money—almost like a time machine for your power bill! 
-              Explore clean energy solutions that pamper the planet and your wallet.
+            Harness real‑time IoT data and AI‑powered forecasts to cut waste, lower costs, and keep your operations running at peak efficiency.
       </div>
       <!-- <div class="flexDiv"> -->
         <!-- <div class="performance">
@@ -19,6 +19,7 @@
           <img src="/Hero.webp" />
         </div> -->
       <!-- </div> -->
+      <!-- Connect your sensors, predict tomorrow’s load today, and automatically schedule processes during off‑peak hours for maximum savings. -->
     </div>
 
   </div>
@@ -70,34 +71,44 @@
     <div style="background-color: coral;" class="iconStory">
       <ng-icon name="matEnergySavingsLeafOutline"/>
     </div>
-    <h2 style="font-weight: 500;">Our Stories</h2>
+    <h2 style="font-weight: 500;">Our Accomplished Goals</h2>
   </header>
-  <h2>We Are Committed to Accelerating the Shift to Renewable Energy</h2>
+  <h2>We Are Committed to Dynamic Real-time Predictions with Minimal Latency</h2>
   <article class="detail">
     <img src="/Ecovision.webp" alt="">
     <div class="analyze">
 
       <div class="analyzeSub">
         <div class="omo">
-          <h2>30 <span style="color: rgb(92, 92, 92); font-weight: 700;">+</span></h2>
-        <p style="color: grey; font-size: 13px; font-weight: 500;">Countries Served</p>
+          <h2>99.9 <span style="color: rgb(92, 92, 92); font-weight: 700;">%</span></h2>
+        <p style="color: grey; font-size: 13px; font-weight: 500; text-align: center;">Prediction Accuracy</p>
         </div>
         <div class="lyze1">
-          <ng-icon name="phosphorGlobeHemisphereWestThin"/>
+          <ng-icon name="bootstrapCheck2Circle"/>
         </div>
       </div>
 
       <div class="analyzeSub">
         <div class="lyze2">
-          <ng-icon name="phosphorChartLineUpThin" />
+          <ng-icon name="letsTimeProgress" />
         </div>
         <div class="omo">
-          <h2><span style="color: rgb(92, 92, 92); font-weight: 700;">$</span>5.8m</h2>
-        <p style="color: grey; font-size: 13px; font-weight: 500;">Cost Effective</p>
+          <h2>0.001<span style="color: rgb(92, 92, 92); font-weight: 700;">ms</span></h2>
+        <p style="color: grey; font-size: 13px; font-weight: 500;">Predictions in miliseconds</p>
         </div>
       </div>
 
        <div class="analyzeSub">
+        <div class="omo">
+          <h2>100% <span style="color: rgb(92, 92, 92); font-weight: 700;">safe</span></h2>
+        <p style="color: grey; font-size: 13px; font-weight: 500;">No Anomalies</p>
+        </div>
+        <div  class="lyze3">
+          <ng-icon name="matWarningAmberOutline" />
+        </div>
+       </div>
+
+       <!-- <div class="analyzeSub">
         <div class="omo">
           <h2>4.5/5</h2>
         <p style="color: grey; font-size: 13px; font-weight: 500;">Ratings from Clients</p>
@@ -105,10 +116,25 @@
         <div  class="lyze3">
           <ng-icon name="heroStarSolid" />
         </div>
-       </div>
+       </div> -->
     </div>
   </article>
   </section>
+
+   <section class="testimonials">
+    <header class="iconWhy secIcon">
+      <div style="background-color: rgb(21, 137, 183);" class="iconStory">
+        <ng-icon name="heroStarSolid"/>
+      </div>
+      <h2 style="font-weight: 500;">Our Clients Love Us</h2>
+    </header>
+      <div class="customers">
+        <h3>What Our Clients Say</h3>
+      </div>
+      <app-testimonials
+      [testimonials]= "myTestimonialData"
+      />
+   </section>
 
   <section class="works">
 
@@ -119,15 +145,26 @@
       </div>
       <h2>How it Works</h2>
     </div>
-      <h3>Your Path to Renewable Energy in <b>3 Easy Steps</b></h3>
+      <h3>Your Path to Efficient Energy Management in <b>3 Easy Steps</b></h3>
       <div class="coral">
-        <div class="consult"></div>
+        <div class="consult">
+        <h3>Get IOT Device (smart meters, industrial sensors)</h3>
+        <p>Get an IOT device so accurate energy consumption predictions for real-time energy usage.</p>
+        </div>
         <h2 style="font-weight: 600;">01/<span style="color:grey;">03</span></h2>
       </div>
       <div class="design">
+        <div class="consult2">
+          <h3>Gain Authorized Access</h3>
+          <p>Sign up/Create account with us to gain authorized access to our real-time predictive model.</p>
+        </div>
         <h2 style="font-weight: 600;">02/<span style="color:grey;">03</span></h2>
       </div>
       <div class="install">
+        <div class="consult3">
+          <h3>Installation on IOT Device</h3>
+          <p>Connect our Software to IOT device (smart meters, industrial sensors) and enjoy real-time energy consumption predictions.</p>
+        </div>
         <h2 style="font-weight: 600;">03/<span style="color:grey;">03</span></h2>
       </div>
     </div>
