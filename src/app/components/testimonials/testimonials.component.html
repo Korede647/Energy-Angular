@@ -1,0 +1,47 @@
+    <div class="slideButton">
+        <button
+      class="nav prev"
+      *ngIf= "showNav"
+      (click)= "prev()"
+    ><ng-icon name="phosphorArrowCircleLeftLight"/></button>
+    <!-- bootstrapArrowLeftCircleFill -->
+    <button
+    class="nav next"
+    *ngIf="showNav"
+    (click)= "next()"
+  ><ng-icon name="phosphorArrowCircleRightLight"/></button>
+  <!-- bootstrapArrowRightCircleFill -->
+    </div>
+<div class="slider"> 
+    <div class="slides"
+    [style.transform]= "'translateX(-' + (current * (100/3)) + '%)'"
+    >
+   
+    <div class="slideGradient"
+    *ngFor="let t of testimonials; let i = index; trackBy: trackByIdx"
+    [ngStyle]= "{ 
+        background: 'linear-gradient(' + (i % 2 === 0 ? evenGradient : oddGradient) + ')'
+      }"
+  >  <div class="slide">
+    <!-- [class.active]= "i === current" -->
+        <div class="header">
+          <img class="avatar" [src]="t.avatarUrl" [alt]="t.name" />
+          <div class="meta">
+            <h4>{{ t.name }}</h4>
+            <small>{{ t.role }}</small>
+          </div>
+          <div class="rating">
+            <ng-container *ngFor="let star of [1,2,3,4,5]">
+              <span [class.filled]="star <= t.rating">★</span>
+            </ng-container>
+            <small>{{ t.rating }}.0 Rating</small>
+          </div>
+        </div>
+        <p class="body">{{ t.text }}</p>
+      </div>
+    </div>
+    </div>
+  
+   
+  </div>
+  
