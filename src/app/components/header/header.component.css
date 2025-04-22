@@ -46,7 +46,7 @@
   }
 .list:hover{
     cursor: pointer;
-    color: rgb(1, 94, 1);
+    color: rgb(21, 137, 183);
     transition: all ease-in 0.3s;
   }
 
@@ -71,5 +71,5 @@
    cursor: pointer;
    background-color: black;
    color: white;
-   transition: all ease-in-out 0.3s;
+   transition: all ease-in-out 0.5ms;
 }

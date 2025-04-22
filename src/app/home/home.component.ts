@@ -1,39 +1,27 @@
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from "@ng-icons/core"
 import { HeaderComponent } from '../components/header/header.component';
-import { heroBolt, heroCheckBadge } from "@ng-icons/heroicons/outline"
 import { heroStarSolid } from "@ng-icons/heroicons/solid"
-import { matUpcomingOutline, matEnergySavingsLeafOutline, matWarningAmberOutline } from "@ng-icons/material-icons/outline"
-import { letsLightning, letsTimeProgress } from "@ng-icons/lets-icons/regular"
-import { letsLightningDuotone} from "@ng-icons/lets-icons/duotone"
-import { matWarningAmberRound } from "@ng-icons/material-icons/round"
-import { hugeLocation03 } from "@ng-icons/huge-icons"
-import {bootstrapCheck2Circle } from "@ng-icons/bootstrap-icons"
-import { phosphorGlobeHemisphereWestThin, phosphorChartLineUpThin } from "@ng-icons/phosphor-icons/thin"
 import { Testimonial, TestimonialsComponent } from '../components/testimonials/testimonials.component';
+import { WhyUsComponent } from '../components/why-us/why-us.component';
+import { RealTimeComponent } from '../components/real-time/real-time.component';
+import { HowItWorksComponent } from "../components/how-it-works/how-it-works.component";
+import { AboutComponent } from '../components/about/about.component';
 
 
 @Component({
   selector: 'app-home',
   imports: [
-    HeaderComponent, 
+    HeaderComponent,
     NgIcon,
-    TestimonialsComponent
-  ],
+    AboutComponent,
+    TestimonialsComponent,
+    WhyUsComponent,
+    RealTimeComponent,
+    HowItWorksComponent
+],
   viewProviders: [provideIcons({
-    heroBolt,
-    matUpcomingOutline,
-    letsLightning,
-    letsLightningDuotone,
-    hugeLocation03,
-    matEnergySavingsLeafOutline,
-    phosphorGlobeHemisphereWestThin,
-    phosphorChartLineUpThin,
-    heroStarSolid,
-    bootstrapCheck2Circle,
-    letsTimeProgress,
-    matWarningAmberOutline,
-    matWarningAmberRound
+    heroStarSolid
   })],
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.css"

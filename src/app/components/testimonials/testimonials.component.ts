@@ -34,7 +34,7 @@ export class TestimonialsComponent implements OnInit{
 
   @Input() startIndex = 0;
 
-  @Input() evenGradient = 'to bottom, rgb(251, 251, 248), #FFD34E'
+  @Input() evenGradient = 'to bottom, rgb(251, 251, 248),rgb(246, 208, 92)'
 
   @Input() oddGradient = 'to bottom, #FF5F6D,rgb(251, 251, 248)'
 

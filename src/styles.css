@@ -8,3 +8,6 @@
     box-sizing: border-box;
     font-family: "Acme", sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}

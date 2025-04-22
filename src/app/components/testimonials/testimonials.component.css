@@ -10,7 +10,7 @@
   .slider {
     position: relative;
     overflow: hidden;
-    width: 85%;
+    width: 82%;
     max-width: 1200px;
     height: 340px;
     padding: 10px;
@@ -49,7 +49,7 @@
     height: 300px;
     flex: 0 0 calc((100% - 2rem) / 2.5); /* 2 gaps of 1rem for 2.5 slides */
     box-sizing: border-box;
-    padding: 1.5rem;
+    padding: 1.3rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     background: #fff;

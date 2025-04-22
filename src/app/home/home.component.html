@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Acme&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Giga:wght@100..900&family=Matemasie&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
    
    <div class = "homeMain">
-  <div class = "home">
+  <section class = "home" id= "home">
     <div class="overlay">
       <app-header/>
       <div class = "content">
@@ -9,7 +9,7 @@
           </h2>
           <h4>Your Industrial Energy Command Center</h4>
           <p>
-            Harness real‑time IoT data and AI‑powered forecasts to cut waste, lower costs, and keep your operations running at peak efficiency.
+            Harness real‑time IoT data and AI‑powered forecasts for sustainable and renewable energy optimization to cut waste, lower costs, and keep your operations running at peak efficiency.
       </div>
       <!-- <div class="flexDiv"> -->
         <!-- <div class="performance">
@@ -22,106 +22,21 @@
       <!-- Connect your sensors, predict tomorrow’s load today, and automatically schedule processes during off‑peak hours for maximum savings. -->
     </div>
 
-  </div>
-
-  <section class="whyChoose">
-    <div class="why">
-      <div class="iconWhy">
-        <div class="ico">
-      <ng-icon name="matUpcomingOutline"/>
-      </div>
-      <h2>Why Choose Us?</h2>
-    </div>
-     <h4>Why Thousands trust Us for Renewable Energy Solutions</h4>
-    </div>
-    <div class="experience">
-      <p>Experience power that's efficient, intelligent and sustainable</p>
-      <div class="flex">
-        
-        <div class="multi">
-          <div style="background-color: rgb(215, 38, 73);" class="icon">
-            <ng-icon name="letsLightning"/>
-          </div>
-          <h2>Reduce Energy cost by up to 70%.</h2>
-          <img class="reduce1" src="/EnergyHome.jpg" alt="">
-          <img class="reduce2" src="/HomeBackground.avif"/>
-        </div>
-
-        <div style="background-color: rgb(251, 240, 224);" class="multi">
-          <div style="background-color: coral;" class="icon">
-            <ng-icon name="letsLightningDuotone"/>
-          </div>
-          <img class="fore" src="/forecast.jpg" alt="">
-          <h2>Simple solutions that are kind to the planet.</h2>
-        </div>
-
-        <div class="multi">
-          <div style="background-color: rgb(21, 137, 183);" class="icon">
-            <ng-icon name="hugeLocation03"/>
-          </div>
-          <h2>Guidance from experts at every step.</h2>
-          <button class="sign">Sign in</button>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <section class="stories">
-    <header class="iconWhy">
-    <div style="background-color: coral;" class="iconStory">
-      <ng-icon name="matEnergySavingsLeafOutline"/>
-    </div>
-    <h2 style="font-weight: 500;">Our Accomplished Goals</h2>
-  </header>
-  <h2>We Are Committed to Dynamic Real-time Predictions with Minimal Latency</h2>
-  <article class="detail">
-    <img src="/Ecovision.webp" alt="">
-    <div class="analyze">
+       <section id= "whyUs">
+        <app-why-us/>
+       </section>
 
-      <div class="analyzeSub">
-        <div class="omo">
-          <h2>99.9 <span style="color: rgb(92, 92, 92); font-weight: 700;">%</span></h2>
-        <p style="color: grey; font-size: 13px; font-weight: 500; text-align: center;">Prediction Accuracy</p>
-        </div>
-        <div class="lyze1">
-          <ng-icon name="bootstrapCheck2Circle"/>
-        </div>
-      </div>
-
-      <div class="analyzeSub">
-        <div class="lyze2">
-          <ng-icon name="letsTimeProgress" />
-        </div>
-        <div class="omo">
-          <h2>0.001<span style="color: rgb(92, 92, 92); font-weight: 700;">ms</span></h2>
-        <p style="color: grey; font-size: 13px; font-weight: 500;">Predictions in miliseconds</p>
-        </div>
-      </div>
-
-       <div class="analyzeSub">
-        <div class="omo">
-          <h2>100% <span style="color: rgb(92, 92, 92); font-weight: 700;">safe</span></h2>
-        <p style="color: grey; font-size: 13px; font-weight: 500;">No Anomalies</p>
-        </div>
-        <div  class="lyze3">
-          <ng-icon name="matWarningAmberOutline" />
-        </div>
-       </div>
-
-       <!-- <div class="analyzeSub">
-        <div class="omo">
-          <h2>4.5/5</h2>
-        <p style="color: grey; font-size: 13px; font-weight: 500;">Ratings from Clients</p>
-        </div>
-        <div  class="lyze3">
-          <ng-icon name="heroStarSolid" />
-        </div>
-       </div> -->
-    </div>
-  </article>
+  <section id= "aboutus">
+    <app-about/>
   </section>
 
-   <section class="testimonials">
+  <section id="realTime">
+    <app-real-time/>
+  </section>
+
+   <section class="testimonials" id="testimonials">
     <header class="iconWhy secIcon">
       <div style="background-color: rgb(21, 137, 183);" class="iconStory">
         <ng-icon name="heroStarSolid"/>
@@ -136,42 +51,9 @@
       />
    </section>
 
-  <section class="works">
-
-    <div class="left">
-      <div class="iconWhy">
-        <div style="background-color: coral; color: white;" class="ico">
-      <ng-icon name="matUpcomingOutline"/>
-      </div>
-      <h2>How it Works</h2>
-    </div>
-      <h3>Your Path to Efficient Energy Management in <b>3 Easy Steps</b></h3>
-      <div class="coral">
-        <div class="consult">
-        <h3>Get IOT Device (smart meters, industrial sensors)</h3>
-        <p>Get an IOT device so accurate energy consumption predictions for real-time energy usage.</p>
-        </div>
-        <h2 style="font-weight: 600;">01/<span style="color:grey;">03</span></h2>
-      </div>
-      <div class="design">
-        <div class="consult2">
-          <h3>Gain Authorized Access</h3>
-          <p>Sign up/Create account with us to gain authorized access to our real-time predictive model.</p>
-        </div>
-        <h2 style="font-weight: 600;">02/<span style="color:grey;">03</span></h2>
-      </div>
-      <div class="install">
-        <div class="consult3">
-          <h3>Installation on IOT Device</h3>
-          <p>Connect our Software to IOT device (smart meters, industrial sensors) and enjoy real-time energy consumption predictions.</p>
-        </div>
-        <h2 style="font-weight: 600;">03/<span style="color:grey;">03</span></h2>
-      </div>
-    </div>
-
-    <div class="right">
-      <img src="/randomImage.avif" alt="">
-    </div>
-    
+  <section id= "process">
+    <app-how-it-works/>
   </section>
 </div>
+
+<!-- Lets unite to improve our world contact us -->

@@ -6,24 +6,28 @@
       <ul>
         <li 
         class = "list"
-        routerLink = "/"
+        routerLink = "['/']"
         routerLinkActive="active"
+        fragment = "home"
+        ariaCurrentWhenActive = "page"
         >Home</li>
         <li 
         class = "list"
-        routerLink = "/aboutus"
+        routerLink = "['/aboutus']"
         routerLinkActive="active"
         >About us</li>
         <li 
         class = "list"
-        routerLink = "/predictions"
+        routerLink = "['/testimonials']"
         routerLinkActive="active"
-        >Predictions</li>
+        fragment = "testimonials"
+        >Reviews</li>
         <li 
         class = "list"
-        routerLink = "/solutions"
+        routerLink = "['/solutions']"
         routerLinkActive="active"
-        >Solutions</li>
+        fragment = "process"
+        >How it Works</li>
         <li 
         class = "list"
         routerLink = "/contact"
@@ -31,6 +35,9 @@
         >Contact</li>
       </ul>
 
-      <button class="explore">Explore Predictions</button>
+      <button 
+      class="explore"
+      routerLink="/dashboard"
+      >Explore the Dashboard</button>
       </nav>
   
