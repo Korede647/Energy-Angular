@@ -7,22 +7,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14%;
+    gap: 13%;
     padding-bottom: 5px;
     position: fixed;
     top: 0;
     z-index: 1000;
+    transition: all 0.3ms;
     /* backdrop-filter: blur(20px); */
-    /* box-shadow: rgba(0, 0, 0, 0.304) 0px 25px 20px -20px; */
+  }
+  .navbar.scrolled{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.304) 0px 25px 20px -20px;
   }
 .divImg {
-    width: 11%;
+    width: 12%;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.divImg > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.divImg > h2{
+  font-size: 25px;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 900;
+  color: rgb(21, 137, 183);
+ 
 }
   ul {
     width: 40%;
@@ -70,7 +79,8 @@
 
 .explore:hover{
    cursor: pointer;
-   background-color: black;
+   background-color: rgb(21, 137, 183);
    color: white;
    transition: all ease-in-out 0.5ms;
+   border: none;
 }
