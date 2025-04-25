@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { distinctUntilChanged, fromEvent, Subscription, throttleTime, map } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,24 @@ import { RouterLink } from '@angular/router';
 
 })
 
-export class HeaderComponent {
-   
+export class HeaderComponent implements OnInit, OnDestroy{
+  scrolled = false;
+  private scroller!: Subscription
+
+  ngOnInit(){
+    this.scroller = fromEvent(window, 'scroll').pipe(
+      throttleTime(100),
+      map(() => window.pageYOffset > 100),
+
+      distinctUntilChanged()
+    ).subscribe(isScrolled => {
+      this.scrolled = isScrolled;
+    })
+  }
+
+  ngOnDestroy(){
+    this.scroller.unsubscribe()
+  }
+
 }
                       
