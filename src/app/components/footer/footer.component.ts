@@ -4,6 +4,7 @@ import { heroEnvelope } from "@ng-icons/heroicons/outline"
 import { mynaBrandFacebookSolid } from "@ng-icons/mynaui/solid"
 import { phosphorInstagramLogoBold, phosphorXLogoBold } from "@ng-icons/phosphor-icons/bold"
 import { jamLinkedin } from "@ng-icons/jam-icons"
+import { bootstrapSlack } from '@ng-icons/bootstrap-icons';
 
 @Component({
   selector: 'app-footer',
@@ -15,7 +16,8 @@ import { jamLinkedin } from "@ng-icons/jam-icons"
     mynaBrandFacebookSolid,
     phosphorInstagramLogoBold,
     phosphorXLogoBold,
-    jamLinkedin
+    jamLinkedin,
+    bootstrapSlack
   }),
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'

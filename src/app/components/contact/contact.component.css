@@ -74,7 +74,7 @@
     transform: skewY(0deg) rotate(-0deg);
     position: absolute;
     margin-left: 3%;
-    top: 593%;
+    top: 543%;
 }
 .pile3{
     width: 300px;
@@ -85,6 +85,6 @@
     background-size: cover;
     border-radius: 25px;
     position: absolute;
-    top: 589%;
+    top: 540%;
     margin-left: 6%;
 }

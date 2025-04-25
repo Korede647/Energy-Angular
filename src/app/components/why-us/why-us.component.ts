@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
+import { heroBolt } from '@ng-icons/heroicons/outline';
 import { hugeLocation03 } from '@ng-icons/huge-icons';
 import { letsLightningDuotone } from '@ng-icons/lets-icons/duotone';
 import { letsLightning } from '@ng-icons/lets-icons/regular';
@@ -14,7 +15,7 @@ import { matUpcomingOutline } from '@ng-icons/material-icons/outline';
     matUpcomingOutline,
     letsLightning,
     letsLightningDuotone,
-    hugeLocation03
+    heroBolt
   })],
   templateUrl: './why-us.component.html',
   styleUrl: './why-us.component.css'
