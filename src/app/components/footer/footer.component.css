@@ -1,0 +1,79 @@
+.footer{
+    width: 100%;
+    height: 520px;
+    background-color: black;
+}
+.top{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.bigText{
+  /* position: absolute; */
+  /* top: 50%; */
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  margin: 0;
+  font-size: 20vw;            /* huge, scales with viewport */
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  color: rgba(255,255,255,0.05);   /* very faint */
+  pointer-events: none;       /* click‑through */
+  user-select: none;
+  /* z-index: 10; */
+}
+
+.bottom{
+    width: 100%;
+    height: 250px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(231, 230, 230);
+}
+
+.link{
+    display: flex;
+    gap: 20px;
+}
+
+.info>p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.envelope{
+    font-size: 23px;
+    text-align: center;
+}
+
+.address{
+    width: 100%;
+    height: 140px;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.303);
+}
+
+.handles{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.socials{
+    display: flex;
+    gap: 10px;
+}

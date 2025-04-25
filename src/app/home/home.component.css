@@ -1,7 +1,8 @@
 .homeMain {
     width: 100%;
     height: max-content;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 
@@ -9,336 +10,74 @@
 .home {
     width: 100%;
     height: 100vh; 
+    display: flex;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/Community.webp");
+    background-color: aliceblue;
+    /* background-image: url("/Community.webp"); */
     transition: 0.5s ease-in-out;
-}
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.381);
-    /* background-color: rgba(0, 0, 0, 0.305); */
-    /* background-color: rgba(0, 0, 0, 0.289); */
     padding-top: 90px;
 }
 .content {
-    width: 100%;
-    height: 320px;
+    width: 50%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    justify-content: center;
+    /* background-color: blue; */
+    gap: 10px;
     padding-left: 75px;
-    padding-right: 47%;
-    padding-top: 7%;
-    /* background-color: black; */
-    /* color: whitesmoke; */
+    padding-right: 7%;
+    margin-top: 3%;
 }
 
 .content > h2{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 500;
 }
 
 .content > h4{
+  font-size: 20px;
     font-weight: 500;
 }
 
 .content > p{
     font-size: 14px;
-    font-weight: 300;
-}
-
-/* .flexDiv{
-    width: 48%;
-    height: 260px;
-    margin-top: 12px;
-    margin-left: auto;
-    background-color: red;
-    display: flex;
-    gap: 30px;
-}
-
-.performance{
-    width: 42%;
-    height: 100%;
-    background-color: ;
-}
-.performance>img{
-    width: 100%;
-    height: 100%;
-} */
-
-.whyChoose{
-    width: 100%;
-    height: 400px;
-    background-color: rgb(0, 0, 9);
-    color: whitesmoke;
-    padding-top: 80px;
-    padding-left: 60px;
-}
-.why{
-    width: 100%;
-    height: 150px;
-}
-.iconWhy{
-    width: auto;
-    height: auto;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.ico{
-    width: 43px;
-    height: 45px;
-    background-color: rgb(199, 54, 54);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 27px;
-    border-radius: 50px;
-}
-.why>h2{
-    font-size: 14px;
-    font-weight: 350;
-}
-
-.why>h4{
-    width: 30%;
-    height: auto;
-    font-size: 27px;
     font-weight: 400;
 }
 
-.experience{
-    width: 100%;
-    height: 170px;
-    display: flex;
-    align-items: center;
-    gap: 35px;
+.animate{
+  width: 45%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
-.experience>p{
-    width: 15%;
-    font-size: 14px;
-    font-weight: 350;
+.iconWhy{
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-.flex{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.multi{
-    width: 27%;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: rgb(242, 245, 245);
-    border-radius: 15px;
-    padding: 25px;
-    color: black;
-}
-.icon{
-    width: 47px;
-    height: 47px;
-    background-color: rgb(21, 137, 183);
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    color: white;
-}
-
-.multi>h2{
-    font-weight: 500;
-    font-size: 25px;
-}
-.reduce1{
-    width: 130px;
-    height: 95px;
-    border-radius: 15px;
-    transform: skewY(10deg) rotate(-20deg);
-    position: absolute;
-    margin-top: 165px;
-    margin-left: 80px;
-}
-.reduce2{
-    width: 130px;
-    height: 95px;
-    border-radius: 15px;
-    margin-left: 55px;
-    transform: skewY(deg) rotate(-10deg);
-}
-
-.fore{
-    width: 225px;
-    height: 100px;
-    border-radius: 15px;
-}
-
-.sign{
-    width: 110px;
-    height: 45px;
-    border: solid black 2px;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: all ease-in 0.3s;
-}
-.sign:hover{
-    cursor: pointer;
-    background-color: rgb(21, 137, 183);
-    color: white;
-    border: none;
-}
-
-.stories{
-    width: 100%;
-    height: 600px;
-    margin-top: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
 .iconStory{
-    width: 47px;
-    height: 47px;
-    /* background-color: rgb(21, 137, 183); */
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    color: white;
+  width: 47px;
+  height: 47px;
+  /* background-color: rgb(21, 137, 183); */
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: white;
 }
-.stories>h2{
-    width:33%;
-    font-size: 27px;
-    text-align: center;
-}
-
-.detail{
-    width: 80%;
-    height: 450px;
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.detail>img{
-    width: 63%;
-    height: 95%;
-    /* object-fit: cover; */
-    border-radius: 15px;
-}
-
-.analyze{
-   width: 34%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   padding-left: 50px;
-   gap: 10px;
-}
-
-.analyzeSub{
-    width: 97%;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    /* background-color: blueviolet; */
-}
-.omo{
-    width: max-content;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-}
-
-.omo>h2{
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.lyze1{
-    width: 110px;
-    height: 100px;
-    border-radius: 10px;
-    background-color: rgb(215, 38, 73);
-    box-shadow: 5px 5px 10px rgba(215, 38, 73, 0.531);
-    transform: rotate(13deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 60px;
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-.lyze2 {
-    width: 110px;
-    height: 100px;
-    background-color: coral;
-    border-radius: 10px;
-    box-shadow: -5px 5px 10px rgba(255, 127, 80, 0.456);
-    transform: rotate(-13deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 60px;
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-  }
-  
-  .lyze3{
-    width: 110px;
-    height: 100px;
-    background-color: rgb(21, 137, 183);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(21, 137, 183, 0.474);
-    transform: rotate(13deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 60px;
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-  }
-  
-  .lyze1:hover{
-    cursor: pointer;
-    box-shadow: 0 0 30px 10px rgba(215, 38, 73, 0.531);
-    filter: brightness(1) saturate(1.1);
-  }
-
-  .lyze2:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px 10px rgba(255, 180, 100, 0.8);
-    filter: brightness(1) saturate(1);
-  }
-
-  .lyze3:hover{
-    cursor: pointer;
-    box-shadow: 0 0 30px 10px rgba(21, 137, 183, 0.474);
-    filter: brightness(1) saturate(1.1);
-  }
 
   .testimonials{
     width: 100%;
-    height: 560px;
-    padding-top: 45px;
+    height: 610px;
+    padding-top: 60px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -354,79 +93,4 @@
     padding-top: 7px;
   }
 
-  .works{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-
-  .left{
-    width: 50%;
-    height: 98%;
-    display: flex;
-
-    flex-direction: column;
-    gap: 17px;
-  }
-  .left>h3{
-    font-size: 27px;
-  }
-
-  .coral, .design, .install{
-    width: 85%;
-    height: 20%;
-    display: flex;
-    align-items: end;
-    gap: 8px;
-  }
-  .design{
-    padding-left: 80px;
-  }
-  .install{
-     padding-left: 150px;
-  }
-
-  .consult, .consult2, .consult3{
-    width: 62%;
-    height: 100%;
-    color: whitesmoke;
-    border-radius: 8px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
-
-  .consult{
-    background-color:  rgb(215, 38, 73);
-  }
-
-  .consult2{
-    width: 70%;
-    background-color: coral;
-  }
-  .consult3{
-    width: 80%;
-    background-color: rgb(21, 137, 183);;
-  }
-  .consult3>p, .consult>p, .consult2>p{
-    font-size: 12px;
-    font-weight: 300;
-  }
-
-  .right{
-    width: 27%;
-    height: 100%;
-    border-radius: 13px;
-  }
-  
-  .right>img{
-    width: 100%;
-    height: 100%;
-    border-radius: 13px;
-  }
+ 

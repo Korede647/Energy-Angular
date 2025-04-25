@@ -1,17 +1,21 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { HeaderComponent } from './components/header/header.component';
 
 export const routes: Routes = [
     {
         path: '',
-        // pathMatch: "full",
-        loadComponent: () => {
-            return import('./home/home.component').then(m => m.HomeComponent);
-        },
+        component: HomeComponent
     },
-    // {
-    //     path: '',
-    //     loadComponent: () => {
-    //         return import('')
-    //     }
-    // }
-];
+    {
+        path: 'dashboard',
+        component: TestimonialsComponent
+        // dashboard
+    },
+    {
+        path: '**',
+        component: HeaderComponent
+        // notfound page
+    }
+]
