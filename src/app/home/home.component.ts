@@ -7,6 +7,8 @@ import { WhyUsComponent } from '../components/why-us/why-us.component';
 import { RealTimeComponent } from '../components/real-time/real-time.component';
 import { HowItWorksComponent } from "../components/how-it-works/how-it-works.component";
 import { AboutComponent } from '../components/about/about.component';
+import { ContactComponent } from '../components/contact/contact.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 
 @Component({
@@ -18,7 +20,9 @@ import { AboutComponent } from '../components/about/about.component';
     TestimonialsComponent,
     WhyUsComponent,
     RealTimeComponent,
-    HowItWorksComponent
+    HowItWorksComponent,
+    ContactComponent,
+    FooterComponent
 ],
   viewProviders: [provideIcons({
     heroStarSolid

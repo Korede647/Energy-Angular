@@ -1,7 +1,8 @@
 .homeMain {
     width: 100%;
     height: max-content;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 
@@ -9,39 +10,34 @@
 .home {
     width: 100%;
     height: 100vh; 
+    display: flex;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/Community.webp");
+    background-color: aliceblue;
+    /* background-image: url("/Community.webp"); */
     transition: 0.5s ease-in-out;
-}
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.381);
-    /* background-color: rgba(0, 0, 0, 0.305); */
-    /* background-color: rgba(0, 0, 0, 0.289); */
     padding-top: 90px;
 }
 .content {
-    width: 100%;
-    height: 320px;
+    width: 50%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    justify-content: center;
+    gap: 10px;
     padding-left: 75px;
-    padding-right: 47%;
+    padding-right: 7%;
     padding-top: 7%;
-    /* background-color: black; */
-    /* color: whitesmoke; */
 }
 
 .content > h2{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
 }
 
 .content > h4{
+  font-size: 25px;
     font-weight: 500;
 }
 
@@ -50,25 +46,12 @@
     font-weight: 300;
 }
 
-/* .flexDiv{
-    width: 48%;
-    height: 260px;
-    margin-top: 12px;
-    margin-left: auto;
-    background-color: red;
-    display: flex;
-    gap: 30px;
+.animate{
+  width: 45%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
-
-.performance{
-    width: 42%;
-    height: 100%;
-    background-color: ;
-}
-.performance>img{
-    width: 100%;
-    height: 100%;
-} */
 
 .iconWhy{
   width: auto;
