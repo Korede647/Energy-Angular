@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Acme", sans-serif;
+    /* font-family: "Acme", sans-serif; */
+    font-family: "Source Sans 3", sans-serif;
 }
 html{
     scroll-behavior: smooth;
