@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: background 0.3s;
+  transition: background 0.5ms;
   flex-wrap: wrap;
 }
 .navbar.scrolled {
@@ -81,6 +81,9 @@
 @media (max-width: 790px){
   .explore{
     display: none;
+  }
+  .divImg>h2{
+    font-weight: 900;
   }
 }
 
