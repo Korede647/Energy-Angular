@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy{
   ngOnInit(){
     this.scroller = fromEvent(window, 'scroll').pipe(
       throttleTime(100),
-      map(() => window.pageYOffset > 100),
+      map(() => window.pageYOffset > 50),
 
       distinctUntilChanged()
     ).subscribe(isScrolled => {
