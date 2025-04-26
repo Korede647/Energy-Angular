@@ -67,22 +67,8 @@
   
   
   @media (max-width: 1024px) {
-    .contactBox {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 30px;
-      gap: 2rem;
-    }
-    .contact {
-      margin-top: 150px;
-    }
-    .pile1, .pile2, .pile3 {
-      width: 260px;
-      height: 180px;
-    }
     .footer {
-      margin-top: 0;
+      margin-top: 80px;
     }
     .top {
       height: 180px;
@@ -105,21 +91,12 @@
     }
   }
   @media (max-width: 768px) {
-    .left > h3 {
-      font-size: 2rem;
-    }
-    .pile1 { transform: translate(0, 15%); }
-    .pile2 { transform: translate(15%, 8%); }
-    .pile3 { transform: translate(30%, 0); }
     .top { height: 150px; }
     .bigText { font-size: 30vw; }
     .bottom { padding: 20px 1rem 40px; }
     .link { flex-wrap: wrap; justify-content: center; }
   }
   @media (max-width: 480px) {
-    .left > h3 { font-size: 1.5rem; }
-    .left > button { width: 120px; height: 50px; }
-    .pile1, .pile2, .pile3 { width: 200px; height: 140px; }
     .handles { flex-direction: column; gap: 0.5rem; }
   }
   
