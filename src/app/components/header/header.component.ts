@@ -12,6 +12,7 @@ import { distinctUntilChanged, fromEvent, Subscription, throttleTime, map } from
 
 export class HeaderComponent implements OnInit, OnDestroy{
   scrolled = false;
+  menuOpen = false;
   private scroller!: Subscription
 
   ngOnInit(){
@@ -27,6 +28,10 @@ export class HeaderComponent implements OnInit, OnDestroy{
 
   ngOnDestroy(){
     this.scroller.unsubscribe()
+  }
+
+  toggleMenu(){
+     this.menuOpen = !this.menuOpen
   }
 
 }

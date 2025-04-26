@@ -1,44 +1,37 @@
+<nav class="navbar" [class.scrolled]="scrolled">
+  <div class="divImg">
+    <h2>RENEWHUB</h2>
+  </div>
 
-    <nav class="navbar" [class.scrolled]="scrolled">
-        <div class = "divImg">
-            <h2>RENEWHUB</h2>
-        </div>
-      <ul>
-        <li 
-        class = "list"
-        routerLink = "['/']"
-        routerLinkActive="active"
-        fragment = "home"
-        ariaCurrentWhenActive = "page"
-        >Home</li>
-        <li 
-        class = "list"
-        routerLink = "['/aboutus']"
-        routerLinkActive="active"
-        >About us</li>
-        <li 
-        class = "list"
-        routerLink = "['/testimonials']"
-        routerLinkActive="active"
-        fragment = "testimonials"
-        >Reviews</li>
-        <li 
-        class = "list"
-        routerLink = "['/solutions']"
-        routerLinkActive="active"
-        fragment = "process"
-        >How it Works</li>
-        <li 
-        class = "list"
-        routerLink = "['/contact']"
-        routerLinkActive = "active"
-        fragment="contact"
-        >Contact</li>
-      </ul>
+  <!-- hamburger toggle, only visible on mobile -->
+  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+    <span [class.open]="menuOpen"></span>
+    <span [class.open]="menuOpen"></span>
+    <span [class.open]="menuOpen"></span>
+  </button>
 
-      <button 
-      class="explore"
-      routerLink="/dashboard"
-      >Explore the Dashboard</button>
-      </nav>
-  
+  <!-- desktop menu -->
+  <ul class="nav-links">
+    <li class="list" routerLink="['/']" routerLinkActive="active" fragment="home" ariaCurrentWhenActive="page">Home</li>
+    <li class="list" routerLink="['/aboutus']" routerLinkActive="active">About us</li>
+    <li class="list" routerLink="['/testimonials']" routerLinkActive="active" fragment="testimonials">Reviews</li>
+    <li class="list" routerLink="['/solutions']" routerLinkActive="active" fragment="process">How it Works</li>
+    <li class="list" routerLink="['/contact']" routerLinkActive="active" fragment="contact">Contact</li>
+  </ul>
+
+  <button class="explore" routerLink="/dashboard">Explore the Dashboard</button>
+
+  <!-- mobile menu panel -->
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <ul>
+      <li (click)="toggleMenu()" routerLink="['/']" routerLinkActive="active" fragment="home">Home</li>
+      <li (click)="toggleMenu()" routerLink="['/aboutus']" routerLinkActive="active">About us</li>
+      <li (click)="toggleMenu()" routerLink="['/testimonials']" routerLinkActive="active" fragment="testimonials">Reviews</li>
+      <li (click)="toggleMenu()" routerLink="['/solutions']" routerLinkActive="active" fragment="process">How it Works</li>
+      <li (click)="toggleMenu()" routerLink="['/contact']" routerLinkActive="active" fragment="contact">Contact</li>
+      <li>
+        <button class="explore mobile-explore" routerLink="/dashboard" (click)="toggleMenu()">Explore the Dashboard</button>
+      </li>
+    </ul>
+  </div>
+</nav>
