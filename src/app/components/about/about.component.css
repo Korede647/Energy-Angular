@@ -1,7 +1,5 @@
-.about{
+.about {
     width: 100%;
-    /* height: 750px; */
-    /* margin-top: 270px; */
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -11,33 +9,25 @@
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.about>h2{
+.about > h2 {
     font-size: 30px;
 }
-.about>p{
+.about > p {
     width: 70%;
     text-align: center;
     font-size: 15px;
 }
-
-.aboutus{
-    width: 100%;
-    height: 220px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-}
-
-.services{
+.services {
     width: 87%;
     height: auto;
-    /* background-color: red; */
     display: grid;
     margin-top: 15px;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
 }
-
-.us{
+.us {
     width: 100%;
     height: 280px;
     background-color: white;
@@ -47,41 +37,69 @@
     flex-direction: column;
     padding: 25px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    transition: all ease-in 0.4ms;
 }
-
-.us:hover{
+.us:hover {
     cursor: pointer;
     margin-top: -4px;
 }
-
-.iconDiv{
+.iconDiv {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
-.iconDiv> h3{
+.iconDiv > h3 {
     font-size: 18px;
     font-weight: 600;
-    /* color: rgb(21, 137, 183); */
     color: black;
 }
-
-.icon{
+.icon {
     width: 50px;
     height: auto;
-    /* background-color: rgb(199, 54, 54); */
-    /* background-color: rgb(242, 245, 245); */
-    /* background-color: gainsboro; */
     display: flex;
     align-items: center;
     justify-content: left;
     font-size: 40px;
     border-radius: 50px;
-    /* color: whitesmoke; */
-    /* color: white; */
     color: rgb(21, 137, 183);
+}
+
+
+@media (max-width: 1024px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+  .about > p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 90%;
+  }
+  .us {
+    height: auto;
+    padding: 1.5rem;
+  }
+  .about {
+    padding: 40px 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about > h2 {
+    font-size: 1.5rem;
+  }
+  .about > p {
+    font-size: 14px;
+    width: 95%;
+  }
+  .iconDiv > h3 {
+    font-size: 1rem;
+  }
 }
